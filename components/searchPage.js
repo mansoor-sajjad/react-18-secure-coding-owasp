@@ -18,7 +18,7 @@ function SearchPage() {
     <div>
       <input value={query} onChange={e => setQuery(e.target.value)} />
       <button onClick={search}>Search</button>
-      <div dangerouslySetInnerHTML={{ __html: result }} />
+      <div>{result}</div> 
     </div>
   );
 }
